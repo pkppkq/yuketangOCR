@@ -9,7 +9,7 @@ async def extract_yuketang_questions():
         print("正在启动火狐浏览器...")
         try:
             # 调用你刚刚安装的系统火狐浏览器
-            browser = await p.firefox.launch(headless=False, executable_path=r"C:\Program Files\Mozilla Firefox\firefox.exe")
+            browser = await p.firefox.launch(headless=False, executable_path=r"C:\Program Files\Mozilla Firefox\firefox.exe") # 自己的火狐位置
         except Exception:
             # 如果路径不对，尝试使用 Playwright 默认的火狐
             browser = await p.firefox.launch(headless=False)
